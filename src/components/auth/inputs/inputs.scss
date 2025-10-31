@@ -1,0 +1,46 @@
+.bn-input {
+  margin-bottom: 1.5rem;
+}
+
+.bn-input__label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #d1d5db; // gray-300
+}
+
+.bn-input__control {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #6b7280; // gray-500
+  background: #4b5563; // gray-600
+  color: #ffffff;
+}
+
+.bn-input__control:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #06b6d4; // cyan-500
+}
+
+.bn-input__password {
+  position: relative;
+}
+
+.bn-input__toggle {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.9rem;
+  color: #9ca3af; // gray-400
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bn-input__toggle:hover {
+  color: #ffffff;
+}
+
+
