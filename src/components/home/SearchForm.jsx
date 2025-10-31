@@ -1,23 +1,14 @@
 "use client";
 
 import React, { useState, useImperativeHandle, forwardRef } from "react";
-import { useRouter } from "next/navigation";
 import "./home.scss";
 
 const SearchForm = forwardRef(function SearchForm({ onSearch }, ref) {
-  const router = useRouter();
   const [searchData, setSearchData] = useState({ from: "", to: "", date: "", passengers: "1" });
 
   const handleSearch = () => {
     if (searchData.from && searchData.to && searchData.date) {
       onSearch?.(searchData);
-      const params = new URLSearchParams({
-        from: searchData.from,
-        to: searchData.to,
-        date: searchData.date,
-        passengers: String(searchData.passengers || "1"),
-      });
-      router.push(`/search?${params.toString()}`);
     }
   };
 
