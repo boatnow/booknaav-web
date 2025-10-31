@@ -1,0 +1,73 @@
+.bn-md { padding: 2rem; }
+.bn-md__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.bn-md__title { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.25rem 0; }
+.bn-md__welcome { color: #9ca3af; }
+.bn-md__highlight { color: #a78bfa; }
+.bn-md__header-actions { display: flex; gap: 1rem; align-items: center; }
+.bn-md__logout { color: #9ca3af; background: transparent; border: none; }
+.bn-md__logout:hover { color: #f87171; }
+.bn-md__close { color: #9ca3af; font-size: 1.75rem; background: transparent; border: none; }
+.bn-md__close:hover { color: #ffffff; }
+
+.bn-md__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+@media (min-width: 1024px) { .bn-md__grid { grid-template-columns: 1fr 3fr; } }
+.bn-md__aside { }
+.bn-md__main { }
+
+.bn-md__stats { }
+.bn-md__stat-card { background: linear-gradient(135deg, #4c1d95, #312e81); border: 1px solid #6d28d9; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+.bn-md__stat-title { font-size: 1.25rem; font-weight: 700; margin: 0 0 1rem 0; }
+.bn-md__stat-grid { display: grid; gap: 1rem; }
+.bn-md__stat-item { text-align: center; }
+.bn-md__stat-two { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center; }
+.bn-md__stat-value { font-weight: 700; font-size: 1.5rem; }
+.bn-md__stat-green { color: #34d399; }
+.bn-md__stat-cyan { color: #22d3ee; }
+.bn-md__stat-yellow { color: #fbbf24; }
+.bn-md__stat-label, .bn-md__stat-sub { color: #d1d5db; font-size: 0.8rem; }
+
+.bn-md__panel { background: #374151; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+.bn-md__panel-title { font-size: 1.125rem; font-weight: 700; margin: 0 0 1rem 0; }
+.bn-md__panel-body { display: grid; gap: 0.75rem; }
+.bn-md__row { display: flex; justify-content: space-between; font-size: 0.9rem; }
+.bn-md__ok { color: #34d399; }
+.bn-md__info { color: #22d3ee; }
+.bn-md__warn { color: #fbbf24; }
+.bn-md__quick { display: grid; gap: 0.75rem; }
+.bn-btn { border-radius: 0.75rem; padding: 0.85rem 1rem; font-weight: 700; border: none; }
+.bn-btn--block { width: 100%; }
+.bn-btn--green { background: linear-gradient(90deg, #22c55e, #10b981); color: #fff; }
+.bn-btn--cyan { background: linear-gradient(90deg, #06b6d4, #3b82f6); color: #fff; }
+.bn-btn--purple { background: linear-gradient(90deg, #a855f7, #4f46e5); color: #fff; }
+.bn-btn--blue { background: #2563eb; color: #fff; }
+
+.bn-md__tabs { display: flex; gap: 0.25rem; margin-bottom: 1.5rem; background: #374151; padding: 0.25rem; border-radius: 0.75rem; }
+.bn-md__tab { flex: 1; padding: 0.8rem; border-radius: 0.5rem; background: transparent; color: #d1d5db; font-weight: 600; }
+.bn-md__tab--active { background: #7c3aed; color: #fff; }
+
+.bn-md__table-wrap { overflow-x: auto; }
+.bn-md__table { width: 100%; font-size: 0.9rem; border-collapse: collapse; }
+.bn-md__table thead tr { border-bottom: 1px solid #4b5563; }
+.bn-md__table th, .bn-md__table td { text-align: left; padding: 0.75rem 1rem; color: #e5e7eb; }
+.bn-md__cell-actions { display: flex; gap: 0.5rem; }
+.bn-link { color: #a78bfa; background: transparent; border: none; padding: 0; }
+.bn-link:hover { color: #c4b5fd; }
+.bn-badge { border-radius: 9999px; padding: 0.1rem 0.5rem; font-size: 0.75rem; color: #fff; }
+.bn-badge--green { background: #16a34a; }
+.bn-badge--yellow { background: #ca8a04; }
+
+.bn-md__list { display: grid; gap: 1rem; }
+.bn-md__item { background: #1f2937; padding: 1rem; border-radius: 0.75rem; display: flex; justify-content: space-between; align-items: center; }
+.bn-md__item-title { font-weight: 700; }
+.bn-md__item-sub { color: #9ca3af; font-size: 0.9rem; }
+.bn-ok { color: #34d399; }
+.bn-warn { color: #fbbf24; }
+
+.bn-md__route { background: #1f2937; padding: 1rem; border-radius: 0.75rem; }
+.bn-md__route-title { font-weight: 700; }
+.bn-md__route-sub { color: #9ca3af; font-size: 0.9rem; }
+
+.bn-md__charts { display: grid; gap: 1rem; }
+.bn-md__chart { background: #1f2937; padding: 1rem; border-radius: 0.75rem; }
+.bn-md__chart-box { height: 12rem; background: #374151; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: #9ca3af; }
+

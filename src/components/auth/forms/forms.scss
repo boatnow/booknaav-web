@@ -1,0 +1,33 @@
+.bn-form {
+  display: block;
+}
+
+.bn-form__subtitle {
+  color: #9ca3af; // gray-400
+  margin: 0 0 1.5rem 0;
+}
+
+.bn-form__submit {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease;
+}
+
+.bn-form__submit:hover {
+  transform: scale(1.02);
+}
+
+.bn-form__submit--user {
+  background: linear-gradient(90deg, #06b6d4 0%, #3b82f6 100%); // cyan->blue
+}
+
+.bn-form__submit--merchant {
+  background: linear-gradient(90deg, #a855f7 0%, #4f46e5 100%); // purple->indigo
+}
+
+

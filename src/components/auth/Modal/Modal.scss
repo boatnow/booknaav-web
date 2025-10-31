@@ -1,0 +1,55 @@
+.bn-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+}
+
+.bn-modal__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.bn-modal__card {
+  background: #1f2937; // gray-800
+  border: 1px solid #374151; // gray-700
+  border-radius: 1.5rem; // rounded-3xl
+  max-width: 32rem; // max-w-md
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.bn-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.bn-modal__title {
+  font-size: 1.875rem; // text-3xl
+  font-weight: 700;
+  margin: 0;
+}
+
+.bn-modal__close {
+  color: #9ca3af; // gray-400
+  font-size: 1.75rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bn-modal__close:hover {
+  color: #ffffff;
+}
+
+.bn-modal__body {
+  padding: 2rem;
+}
+
+

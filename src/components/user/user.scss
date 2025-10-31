@@ -1,0 +1,23 @@
+.bn-user { position: relative; padding-top: 6rem; min-height: 100vh; background: #111827; }
+.bn-user__container { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+.bn-user__title { text-align: center; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0 0 2rem 0; }
+.bn-user__card-wrap { background: #1f2937; border-radius: 1.5rem; padding: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.3); max-width: 64rem; margin: 0 auto; }
+.bn-user__header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid #374151; }
+.bn-user__avatar { width: 4rem; height: 4rem; background: #374151; border-radius: 9999px; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+.bn-user__welcome { font-size: 1.5rem; font-weight: 700; margin: 0; }
+.bn-user__sub { color: #9ca3af; margin: 0; }
+.bn-user__section { font-size: 1.5rem; font-weight: 800; margin: 1rem 0; }
+
+.bn-user__empty { text-align: center; color: #9ca3af; }
+.bn-user__list { display: grid; gap: 1rem; }
+.bn-user__card { background: #374151; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+.bn-user__card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; }
+.bn-user__ferry { font-weight: 700; font-size: 1.1rem; }
+.bn-user__route { color: #9ca3af; font-size: 0.9rem; }
+.bn-badge { border-radius: 9999px; padding: 0.25rem 0.5rem; font-size: 0.75rem; font-weight: 700; color: #fff; }
+.bn-badge--green { background: #16a34a; }
+.bn-badge--yellow { background: #ca8a04; }
+.bn-user__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; color: #d1d5db; font-size: 0.95rem; }
+.bn-user__label { color: #9ca3af; margin-right: 0.25rem; }
+.bn-user__total { color: #22d3ee; font-weight: 800; }
+
