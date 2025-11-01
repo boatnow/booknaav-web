@@ -12,10 +12,255 @@
 .bn-hero__btn--primary:hover { filter: brightness(1.05); }
 .bn-hero__btn--secondary { border: 2px solid #fff; color: #fff; background: transparent; }
 .bn-hero__btn--secondary:hover { background: #fff; color: #2563eb; }
-.bn-hero__art { display: none; }
-@media (min-width: 1024px) { .bn-hero__art { display: block; } }
-.bn-hero__art-card { background: #bfdbfe; border-radius: 1.5rem; padding: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
-.bn-hero__art-inner { text-align: center; }
+.bn-hero__art { 
+  display: block !important; 
+  visibility: visible !important;
+}
+@media (min-width: 1024px) { 
+  .bn-hero__art { 
+    display: block !important;
+    visibility: visible !important;
+  } 
+}
+.bn-hero__art-card { 
+  background: #bfdbfe; 
+  border-radius: 1.5rem; 
+  padding: 2rem; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  display: block !important;
+  visibility: visible !important;
+}
+.bn-hero__art-inner { 
+  text-align: center;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Animated Boat Logo */
+.bn-hero__animated-logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  min-height: 240px;
+  width: 100%;
+  visibility: visible !important;
+}
+
+.bn-boat-logo {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  animation: floatBoat 4s ease-in-out infinite;
+  display: block !important;
+  visibility: visible !important;
+}
+
+@keyframes floatBoat {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-15px) rotate(1.5deg); }
+}
+
+/* Boat Hull */
+.bn-boat__hull {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.bn-boat__hull::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 15px;
+  background: linear-gradient(90deg, #F5DEB3 0%, #DEB887 100%);
+  border-radius: 50px;
+}
+
+/* Mast */
+.bn-boat__mast {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(180deg, #654321 0%, #8B4513 100%);
+  border-radius: 2px;
+  z-index: 1;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Main Sail */
+.bn-boat__sail--main {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 80px solid #FFFFFF;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  z-index: 2;
+  animation: sailFlap 3s ease-in-out infinite;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Front Sail */
+.bn-boat__sail--front {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-right: 35px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 50px solid #F0F8FF;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  z-index: 1;
+  animation: sailFlap 2.5s ease-in-out infinite 0.3s;
+  display: block !important;
+  visibility: visible !important;
+}
+
+@keyframes sailFlap {
+  0%, 100% { transform: translateX(-50%) rotate(0deg); }
+  25% { transform: translateX(-50%) rotate(-2deg); }
+  75% { transform: translateX(-50%) rotate(2deg); }
+}
+
+/* Flag */
+.bn-boat__flag {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  z-index: 3;
+  animation: flagWave 2s ease-in-out infinite;
+  display: block !important;
+  visibility: visible !important;
+}
+
+@keyframes flagWave {
+  0%, 100% { transform: translateX(-50%) rotate(-5deg); }
+  50% { transform: translateX(-50%) rotate(5deg); }
+}
+
+/* Waves */
+.bn-boat__waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.bn-boat__waves::before,
+.bn-boat__waves::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 20px;
+  background: linear-gradient(90deg, transparent, #3B82F6 50%, transparent);
+  opacity: 0.6;
+}
+
+.bn-boat__waves::before {
+  left: -50%;
+  animation: waveMove1 3s linear infinite;
+  border-radius: 50% 50% 0 0;
+}
+
+.bn-boat__waves::after {
+  left: -50%;
+  animation: waveMove2 4s linear infinite;
+  border-radius: 50% 50% 0 0;
+  opacity: 0.4;
+}
+
+@keyframes waveMove1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+@keyframes waveMove2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Explore Button */
+.bn-hero__explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.875rem 1.75rem;
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.bn-hero__explore-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.bn-hero__explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
+  background: linear-gradient(135deg, #0891b2 0%, #2563eb 100%);
+  gap: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.bn-hero__explore-btn:hover::before {
+  left: 100%;
+}
+
+.bn-hero__explore-btn:active {
+  transform: translateY(0);
+}
+
 .bn-hero__art-title { font-weight: 700; margin: 0.5rem 0; color: #1e3a8a; }
 .bn-hero__art-sub { color: #1d4ed8; font-size: 0.95rem; }
 
