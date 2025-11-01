@@ -17,7 +17,7 @@ export default function Hero() {
             with <span className="accent">BookNaav</span>
           </h1>
           <p className="tagline">जहाज़ में सवार, नई उड़ान के लिए तैयार — Book boats in India with ease.</p>
-          <p className="desc">Find local skippers, transparent pricing, and verified vessels — like Uber, but for boats.</p>
+          <p className="desc">Find local skippers, transparent pricing, and verified vessels —  boat now.</p>
 
           <div className="hero-ctas">
             <button

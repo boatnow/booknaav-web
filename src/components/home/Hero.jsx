@@ -22,15 +22,21 @@ export default function Hero({ onPrimary, onSecondary }) {
           <div className="bn-hero__art">
             <div className="bn-hero__art-card">
               <div className="bn-hero__art-inner">
-                <svg width="180" height="135" viewBox="0 0 200 150" className="bn-hero__svg">
-                  <path d="M0 120 Q50 110 100 120 T200 120 L200 150 L0 150 Z" fill="#3B82F6" opacity="0.3"/>
-                  <ellipse cx="100" cy="110" rx="60" ry="15" fill="#8B4513"/>
-                  <path d="M100 110 L100 60 L140 80 Z" fill="#F5F5DC"/>
-                  <line x1="100" y1="110" x2="100" y2="60" stroke="#8B4513" strokeWidth="3"/>
-                  <rect x="100" y="60" width="20" height="15" fill="#EF4444"/>
-                </svg>
+                <div className="bn-hero__animated-logo">
+                  <div className="bn-boat-logo">
+                    <div className="bn-boat__hull"></div>
+                    <div className="bn-boat__sail bn-boat__sail--main"></div>
+                    <div className="bn-boat__sail bn-boat__sail--front"></div>
+                    <div className="bn-boat__mast"></div>
+                    <div className="bn-boat__flag"></div>
+                    <div className="bn-boat__waves"></div>
+                </div>
+                </div>
                 <h3 className="bn-hero__art-title">Boat Rentals</h3>
                 <p className="bn-hero__art-sub">Browse and book boats in India</p>
+                <a href="#services" className="bn-hero__explore-btn">
+                  Explore →
+                </a>
               </div>
             </div>
           </div>
